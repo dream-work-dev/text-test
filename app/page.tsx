@@ -259,9 +259,6 @@ export default function Home() {
           <a className="button primary" href="mailto:ben.dean0518@gmail.com">
             ben.dean0518@gmail.com
           </a>
-          <a className="button secondary" href="tel:+14707627935">
-            +1 470 762 7935
-          </a>
         </div>
       </section>
     </main>
