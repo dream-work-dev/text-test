@@ -12,6 +12,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const dynamic = "force-static";
+
 export const metadata: Metadata = {
   title: "Benjamin Dean | Senior Software Engineer",
   description:

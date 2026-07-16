@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 
+export const dynamic = "force-static";
+
 const skills = [
   {
     title: "Frontend Architecture",
@@ -34,12 +36,12 @@ const timeline = [
     ],
   },
   {
-    company: "FullStory",
-    role: "Senior Software Engineer, Playback",
+    company: "Playback",
+    role: "Senior Software Engineer",
     dates: "2022 - 2023",
     location: "Atlanta, GA",
     summary:
-      "Set technical direction for FullStory's next-generation session replay platform after joining as the Playback team's first engineer.",
+      "Set technical direction for Playback's next-generation session replay platform after joining as the Playback team's first engineer.",
     highlights: [
       "Modernized internal frontend infrastructure by migrating legacy frameworks to React.",
       "Unified fragmented replay timing logic into a scalable architecture.",
@@ -47,8 +49,8 @@ const timeline = [
     ],
   },
   {
-    company: "FullStory",
-    role: "Senior Software Engineer, Web Capture",
+    company: "Web Capture",
+    role: "Senior Software Engineer",
     dates: "2016 - 2022",
     location: "Atlanta, GA",
     summary:

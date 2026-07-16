@@ -1,12 +1,13 @@
 import type { NextConfig } from "next";
 
-const repoName = "portfolio";
+const repoName = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "portfolio";
+const isGitHubActions = process.env.GITHUB_ACTIONS === "true";
+const basePath = isGitHubActions ? `/${repoName}` : "";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   output: "export",
-  basePath: `/${repoName}`,
-  assetPrefix: `/${repoName}/`,
+  basePath,
+  assetPrefix: basePath ? `${basePath}/` : undefined,
   images: {
     unoptimized: true,
   },
