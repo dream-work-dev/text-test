@@ -16,16 +16,16 @@ const siteUrl =
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Benjamin Dean | Senior Software Engineer",
-  description: "Senior software engineer specializing in real-time visualization, browser performance, streaming systems, and observability.",
+  description: "Backend-focused senior software engineer specializing in distributed systems, cloud infrastructure, streaming data, and observability.",
   openGraph: {
     title: "Benjamin Dean | Senior Software Engineer",
-    description: "Real-time systems. Browser performance. Observability.",
+    description: "Distributed systems. Streaming data. Cloud infrastructure. Observability.",
     images: [{ url: "/og.png", width: 1792, height: 896, alt: "Benjamin Dean - Senior Software Engineer" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Benjamin Dean | Senior Software Engineer",
-    description: "Real-time systems. Browser performance. Observability.",
+    description: "Distributed systems. Streaming data. Cloud infrastructure. Observability.",
     images: ["/og.png"],
   },
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },

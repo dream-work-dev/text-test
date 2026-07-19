@@ -5,13 +5,13 @@ const experience = [
     company: "Trench",
     location: "Atlanta, GA",
     summary:
-      "Leading system architecture for an AI-native Linux observability platform built around eBPF telemetry and real-time infrastructure monitoring.",
+      "Leading backend-focused full-stack architecture and systems integration for an AI-native Linux observability platform powered by eBPF telemetry.",
     highlights: [
-      "Architected a high-performance canvas engine for dense, low-latency streaming telemetry.",
-      "Designed a modular visualization framework for timelines, event graphs, analytics, and dependency exploration.",
-      "Established performance profiling standards across rendering, memory, and real-time workloads.",
+      "Design Go and Python services that ingest, normalize, and process high-frequency telemetry from distributed Linux environments.",
+      "Define data contracts and event-driven pipelines spanning eBPF collectors, Kafka, backend services, APIs, and analytical applications.",
+      "Deploy and operate containerized services on AWS with Kubernetes, PostgreSQL, Redis, and automated CI/CD workflows.",
     ],
-    stack: ["React", "TypeScript", "Go", "Python", "Canvas", "eBPF"],
+    stack: ["Go", "Python", "AWS", "Kubernetes", "Kafka", "eBPF"],
   },
   {
     years: "2022 - 2023",
@@ -19,13 +19,13 @@ const experience = [
     company: "FullStory",
     location: "Atlanta, GA",
     summary:
-      "Led architecture for FullStory's next-generation session replay platform and helped set the Playback team's technical direction from its earliest stage.",
+      "Led backend-focused full-stack architecture for FullStory's next-generation session replay platform as the Playback team's first engineer.",
     highlights: [
-      "Modernized internal frontend infrastructure by migrating legacy frameworks to React.",
-      "Unified fragmented replay timing logic into a scalable architecture.",
-      "Designed streaming data structures for efficient real-time playback and analysis.",
+      "Defined foundational service boundaries, engineering standards, and long-term platform priorities.",
+      "Designed streaming workflows and Kafka-based event-processing patterns for session reconstruction and analysis.",
+      "Built backend services and APIs while unifying replay timing into a scalable incremental-delivery architecture.",
     ],
-    stack: ["React", "TypeScript", "JavaScript", "Streaming Data"],
+    stack: ["Python", "TypeScript", "AWS", "Kubernetes", "PostgreSQL", "Kafka"],
   },
   {
     years: "2019 - 2022",
@@ -33,13 +33,13 @@ const experience = [
     company: "FullStory",
     location: "Atlanta, GA",
     summary:
-      "Built enterprise analytics and configuration tools while pushing browser performance across FullStory's critical capture paths.",
+      "Developed backend-focused full-stack capabilities for real-time behavioral analytics and enterprise session intelligence.",
     highlights: [
-      "Delivered real-time user frustration detection for enterprise customers.",
-      "Built production configuration preview tooling for safer deployments.",
-      "Created browser performance utilities and a JavaScript microbenchmarking framework.",
+      "Designed high-volume event-processing workflows and Kafka pipelines for downstream analytics services.",
+      "Built Python and TypeScript services for configuration, analytics, and capture-platform operations.",
+      "Created browser-performance utilities and a JavaScript microbenchmarking framework for critical execution paths.",
     ],
-    stack: ["JavaScript", "React", "Browser APIs", "Performance"],
+    stack: ["Python", "TypeScript", "Kafka", "AWS", "Browser APIs", "Performance"],
   },
   {
     years: "2016 - 2019",
@@ -49,22 +49,23 @@ const experience = [
     summary:
       "Contributed to the browser capture platform responsible for recording hundreds of millions of user sessions each year.",
     highlights: [
+      "Designed reliable client-side resource upload and data-transfer mechanisms.",
       "Expanded session replay compatibility for CSS-in-JS applications.",
-      "Improved the reliability and scale of client-side resource uploads.",
-      "Implemented dynamic, GDPR-compliant privacy controls.",
+      "Implemented dynamic, GDPR-compliant privacy controls based on user consent.",
     ],
     stack: ["JavaScript", "Browser APIs", "Session Replay", "Privacy"],
   },
 ];
 
 const skills = [
-  ["Languages", "Python, TypeScript, Go, JavaScript, C, C++, Java, Bash, PHP, SQL, HTML, CSS"],
-  ["Frontend", "React, Canvas UI systems, SPAs, real-time dashboards"],
-  ["Backend", "Django, Flask, Node.js, REST APIs, GraphQL, Java, Go, Spring Boot, .NET, gRPC, Kafka, RabbitMQ, Celery, Redis, PostgreSQL, MySQL, MongoDB, Elasticsearch"],
-  ["Systems", "Distributed systems, streaming pipelines, event-driven architecture, REST APIs"],
-  ["Performance", "Rendering optimization, memory profiling, microbenchmarking"],
-  ["Observability", "Session replay, system telemetry, analytics, eBPF"],
-  ["Applied AI", "LLM-integrated workflows, assisted analytics, data summarization"],
+  ["Languages", "Go, Python, TypeScript, JavaScript, SQL"],
+  ["Cloud", "AWS, Kubernetes, Docker, containerized services, production operations"],
+  ["Backend", "FastAPI, Django, Flask, Node.js, REST APIs, microservices"],
+  ["Data", "PostgreSQL, Redis, Kafka, relational modeling, event streaming"],
+  ["Systems", "Distributed systems, streaming pipelines, event-driven architecture, CI/CD"],
+  ["Observability", "eBPF, Linux telemetry, session replay, incident analysis"],
+  ["Full Stack", "React, browser APIs, real-time dashboards, Canvas visualization"],
+  ["Applied AI", "AI-assisted incident analysis, LLM workflows, telemetry summarization"],
 ];
 
 export default function Home() {
@@ -88,9 +89,9 @@ export default function Home() {
           <div className="hero-copy">
             <p className="eyebrow">Hi. I am</p>
             <h1>Benjamin Dean</h1>
-            <p className="role"><span aria-hidden="true">›</span> Senior Software Engineer</p>
+            <p className="role"><span aria-hidden="true">›</span> Backend-Focused Senior Software Engineer</p>
             <p className="intro">
-              I build the frontend foundations behind complex engineering products - from session replay at global scale to real-time Linux observability powered by eBPF.
+              I design distributed systems, cloud-native services, and high-performance applications - from session replay at global scale to real-time Linux observability powered by eBPF.
             </p>
             <div className="hero-actions">
               <a className="button primary" href="#experience">Explore Experience</a>
@@ -122,12 +123,12 @@ export default function Home() {
           </div>
           <div className="about-grid">
             <div className="about-copy">
-              <p className="lead">I design high-performance interfaces for systems where every frame, event, and architectural decision matters.</p>
+              <p className="lead">I design backend systems and full-stack products where every event, service boundary, and architectural decision matters.</p>
               <p>
-                Over the past decade, I&apos;ve worked across browser capture, session replay, streaming data, and observability. At FullStory, I helped evolve a platform serving hundreds of millions of sessions annually. Today at Trench, I lead frontend architecture for AI-powered Linux observability products.
+                Over the past decade, I&apos;ve worked across distributed systems, browser capture, session replay, streaming data, and observability. At FullStory, I helped evolve a platform serving hundreds of millions of sessions annually. Today at Trench, I lead backend-facing application architecture and systems integration for an AI-native Linux observability platform.
               </p>
               <p>
-                My work sits at the boundary between product and deep engineering: translating dense system behavior into responsive, understandable experiences while making the underlying platform easier for teams to extend.
+                My work spans telemetry ingestion, event-driven processing, cloud infrastructure, APIs, and analytical interfaces - turning dense system behavior into reliable platforms and understandable product experiences.
               </p>
             </div>
             <div className="skills-panel">
@@ -196,7 +197,7 @@ export default function Home() {
         <section className="contact" id="contact">
           <p className="eyebrow">04 / contact</p>
           <h2>Let&apos;s make complex systems<br />feel <em>effortless.</em></h2>
-          <p>I&apos;m always glad to trade notes on frontend architecture, visualization, performance, or the next hard problem.</p>
+          <p>I&apos;m always glad to trade notes on distributed systems, observability, streaming architecture, performance, or the next hard problem.</p>
           <a className="email-link" href="mailto:ben.dean0518@gmail.com">ben.dean0518@gmail.com <span>↗</span></a>
           <div className="socials">
             <a href="https://linkedin.com/in/ben-dean-a027ac31" target="_blank" rel="noreferrer">LinkedIn ↗</a>
