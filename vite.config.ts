@@ -43,11 +43,7 @@ export default defineConfig(async () => {
   // Wrangler snapshots its log path while the Cloudflare plugin is imported.
   const { cloudflare } = await import("@cloudflare/vite-plugin");
 
-  const repoName = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "portfolio";
-  const isGitHubActions = process.env.GITHUB_ACTIONS === "true";
-
   return {
-    base: isGitHubActions ? `/${repoName}/` : "/",
     server: isCodexSeatbeltSandbox
       ? { watch: { useFsEvents: false, usePolling: true } }
       : undefined,

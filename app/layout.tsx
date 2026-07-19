@@ -1,41 +1,40 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+  variable: "--font-mono",
   subsets: ["latin"],
 });
 
-export const dynamic = "force-static";
+const vercelHostname =
+  process.env.VERCEL_PROJECT_PRODUCTION_URL ?? process.env.VERCEL_URL;
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (vercelHostname ? `https://${vercelHostname}` : "http://localhost:3000");
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Benjamin Dean | Senior Software Engineer",
-  description:
-    "Senior software engineer portfolio for Benjamin Dean, focused on frontend architecture, performance engineering, observability, and streaming data platforms.",
-  icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+  description: "Senior software engineer specializing in real-time visualization, browser performance, streaming systems, and observability.",
+  openGraph: {
+    title: "Benjamin Dean | Senior Software Engineer",
+    description: "Real-time systems. Browser performance. Observability.",
+    images: [{ url: "/og.png", width: 1792, height: 896, alt: "Benjamin Dean - Senior Software Engineer" }],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Benjamin Dean | Senior Software Engineer",
+    description: "Real-time systems. Browser performance. Observability.",
+    images: ["/og.png"],
+  },
+  icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={geistMono.variable}>{children}</body>
     </html>
   );
 }
