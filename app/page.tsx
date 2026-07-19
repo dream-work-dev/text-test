@@ -202,7 +202,6 @@ export default function Home() {
           <div className="socials">
             <a href="https://linkedin.com/in/ben-dean-a027ac31" target="_blank" rel="noreferrer">LinkedIn ↗</a>
             <a href="https://github.com/bsinky" target="_blank" rel="noreferrer">GitHub ↗</a>
-            <a href="tel:+14707627935">+1 470 762 7935</a>
           </div>
         </section>
 
