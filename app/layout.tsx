@@ -20,13 +20,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Benjamin Dean | Senior Software Engineer",
     description: "Distributed systems. Streaming data. Cloud infrastructure. Observability.",
-    images: [{ url: "/og.png", width: 1792, height: 896, alt: "Benjamin Dean - Senior Software Engineer" }],
+    images: [{ url: "/og-v2.png", width: 1774, height: 887, alt: "Benjamin Dean - Senior Software Engineer" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Benjamin Dean | Senior Software Engineer",
     description: "Distributed systems. Streaming data. Cloud infrastructure. Observability.",
-    images: ["/og.png"],
+    images: ["/og-v2.png"],
   },
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
 };

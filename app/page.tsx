@@ -111,7 +111,7 @@ export default function Home() {
         </section>
 
         <div className="statusbar" aria-hidden="true">
-          <span>10+ years building for the browser</span>
+          <span>10+ years building production systems</span>
           <span>ATL / EST</span>
           <span>systems online</span>
         </div>
